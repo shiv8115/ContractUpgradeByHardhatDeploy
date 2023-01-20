@@ -1,0 +1,38 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/Num1.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.9;\n\ncontract Num1 {\n    uint256 private num;\n    function update(uint256 _num) public{\n        num= _num;\n    }\n    function get() public view returns(uint256){\n        return num;\n    }\n}"
+    },
+    "contracts/NUM2.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.9;\n\ncontract NUM2{\n    uint256 private num;\n    function update(uint256 _num) public{\n        num= _num;\n    }\n    function get() public view returns(uint256){\n        return num;\n    }\n    function increment() public{\n        num++;\n    }\n}"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": false,
+      "runs": 200
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "storageLayout",
+          "devdoc",
+          "userdoc",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}
